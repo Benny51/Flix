@@ -1,0 +1,3 @@
+# Trouver une API pour stocker les informations des animes, films, manga, etc...
+# Finir le front, la home page, la pagination et regarder
+# La page utilisateur (Inscription, connection est complétement inutile pour l'instant)

@@ -1,0 +1,94 @@
+
+#logo{
+    text-align: center;
+    padding-top: 70px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+#logo a{
+    color: white;
+    font-size: 45px;
+}
+#logo::first-letter{
+    color: lightgreen;
+    font-style: italic;
+    font-weight: bolder;
+    font-size:larger;
+}
+
+.containter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inscription-container {
+    display: flex;
+    background-color: rgb(29, 29, 29);
+    width: 440px;
+    height: auto;
+    padding: 30px;
+    margin: 0;
+    flex-direction: column;
+    border-radius: 7px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.inscription-container h3{
+    color: white;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    color:white;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.form_input{
+    background-color: transparent;
+    padding: 12px;
+    border: 1px solid rgb(118 118, 118);
+    border-radius: 4px;
+    color: white;
+}
+
+.alreadyhaveaccount{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 40px;
+    color: white;
+}
+
+#condition{
+    margin: 20px 0;
+}
+
+#condition:checked{
+    accent-color: lightgreen;
+}
+
+#create-account{
+    cursor: pointer;
+    margin: 20px 0;
+    padding: 18px;
+    background-color: lightgreen;
+    font-weight: bolder;
+    font-size: 18px;
+    border-radius:4px;
+}
+
+.error{
+    padding: 12px;
+    margin-top: 10px;
+    border-radius:2px;
+    text-align: center;
+    background-color: rgb(248, 215, 218);
+}

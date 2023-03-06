@@ -1,0 +1,26 @@
+<header>
+    <nav class="nav">
+        <div class="nav__left">
+            <!-- Lien vers la home page -->
+            <h2 id="logo"><a href="#">Flix</a></h2> 
+            <form action="#" method="get" id="form_search">
+                <input type="search" placeholder="search..." maxlength="100" name="search_bar" id="search_bar">
+                <button type="submit" id="search_button"><i class="fa fa-search"></i></button>
+            </form>
+
+            <ul class="nav_menu">
+                <li><a href="#">Manga</a></li>
+                <li><a href="#">Anime</a></li>
+                <li><a href="#">Film</a></li>
+            </ul>
+        </div>
+
+        <div class="nav__right">
+            <a routerLink="../inscription" id="nav__right__btninscription">S'inscrire</a>
+            
+            <button routerLink="../connection">
+                Se connecter
+            </button>
+        </div>
+    </nav>
+</header>

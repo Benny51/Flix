@@ -1,0 +1,45 @@
+<h2 id="logo"><a routerLink="../flix">Flix</a></h2> 
+<div class="containter">
+    <div class="inscription-container">
+        <h3>Créer un nouveau compte</h3>
+        <form [formGroup]="form" (submit)="emitToCreation()">
+            <label for="username">
+                Nom*
+            </label>
+            <!-- <span class="error">
+                {{errorDuplicata}}
+            </span> -->
+            <input type="text" formControlName="username" id="username" class="form_input" required placeholder="Indiquez votre nom d'utilisateur">
+            <label for="email">
+                Email*
+            </label>
+            <input type="email" id="email" formControlName="email" name="email" class="form_input" placeholder="Indiquez votre email" required>
+            <span class="error" *ngIf="isCorrectEmail">
+                Veuillez entrer un mail correct
+            </span>
+            <label for="password">
+                Mot de passe*
+            </label>
+            <input type="password" id="password" formControlName="password" name="password" class="form_input" placeholder="Au moins 6 caractères" required>
+
+            <label for="confirmed_password">
+                Confirmer le mot de passe*
+            </label>
+            <input type="password" id="confirmed_password" formControlName="confirmed_password" required name="confirmed_password" class="form_input" placeholder="Veuillez confirmer votre mot de passe" >
+            <span class="error" *ngIf="isSamePassword">
+                Les mots de passes ne correspondent pas
+            </span>
+
+            <div>
+                <label for="condition">
+                    <input type="checkbox" name="condition" id="condition" formControlName="condition">
+                    J'accepte les conditions d'utilisation*
+                </label>
+            </div>
+
+            <button type="submit" id="create-account" [disabled]="form.invalid">Créer un compte</button>
+        </form>
+    </div>
+</div>
+
+<p class="alreadyhaveaccount">Vous avez déjà un compte ? <a routerLink="../connection">Se connecter</a></p>
